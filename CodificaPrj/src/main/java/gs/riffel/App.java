@@ -1,3 +1,5 @@
+package gs.riffel;
+
 public class App {
     public static void main(String[] args) throws Exception {
         Codificador cod = new CodificadorSimples();
