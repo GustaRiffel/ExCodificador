@@ -2,7 +2,7 @@ package gs.riffel;
 
 import java.time.LocalDate;
 
-public class Codificador130825 implements Codificador{
+public class CodificadorAtbash implements Codificador{
     public String getNome(){
         return "Codificador em implemtação:Atbash, Invertido ?";
     }

@@ -31,5 +31,23 @@ public class App {
         System.out.println("Texto original: "+texto2);
         System.out.println("Texto codificado: "+morse);
         System.out.println("Texto decodificado: "+decodificar);
+
+        // Teste da cifra de atbash abaixo
+
+        CodificadorAtbash ca = new CodificadorAtbash();
+
+        System.out.println("Codificador: "+ ca.getNome());
+        System.out.println("Versao: "+ ca.getDataCriacao());
+        System.out.println("Nivel de segurança: "+ca.getNivelSeguranca());
+        
+        String textoAtbash = "Voce sabia que onibus";
+        String Atbash = codificador.codificar(textoAtbash);
+        String decodificaAtbash = codificador.decodificar(Atbash);
+
+        System.out.println("Texto original: "+textoAtbash);
+        System.out.println("Texto codificado: "+Atbash);
+        System.out.println("Texto decodificado: "+decodificaAtbash);
+
+
     }
 }
