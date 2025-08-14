@@ -41,8 +41,8 @@ public class App {
         System.out.println("Nivel de segurança: "+ca.getNivelSeguranca());
         
         String textoAtbash = "Voce sabia que onibus";
-        String Atbash = codificador.codificar(textoAtbash);
-        String decodificaAtbash = codificador.decodificar(Atbash);
+        String Atbash = ca.codificar(textoAtbash);
+        String decodificaAtbash = ca.decodificar(Atbash);
 
         System.out.println("Texto original: "+textoAtbash);
         System.out.println("Texto codificado: "+Atbash);

@@ -3,8 +3,9 @@ package gs.riffel;
 import java.time.LocalDate;
 
 public class CodificadorAtbash implements Codificador{
+    
     public String getNome(){
-        return "Codificador em implemtação:Atbash, Invertido ?";
+        return "Codificador em implemtação:Atbash";
     }
 
     public LocalDate getDataCriacao(){
@@ -16,7 +17,7 @@ public class CodificadorAtbash implements Codificador{
     }
 
     /*Método responsável por realizar a cifra de Atbash*/
-    private String Atbash(String str) {
+    private static String Atbash(String str) {
         if (str == null) {
             return null;
         }
@@ -39,11 +40,11 @@ public class CodificadorAtbash implements Codificador{
         return SB.toString();
     }
 
-    public String codifica(String str){
+    public String codificar(String str){
        return Atbash(str);
     }
 
-    public String decodifica(String str){
+    public String decodificar(String str){
         return Atbash(str);
     }
 }
