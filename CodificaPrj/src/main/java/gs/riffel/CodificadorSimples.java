@@ -15,7 +15,7 @@ public class CodificadorSimples implements Codificador {
         return 1;
     }
 
-    public String codifica(String str) {
+    public String codificar(String str) {
         StringBuilder encoded = new StringBuilder();
 
         for (char c : str.toCharArray()) {
@@ -25,7 +25,7 @@ public class CodificadorSimples implements Codificador {
         return encoded.toString();
     }
 
-    public String decodifica(String str) {
+    public String decodificar(String str) {
         StringBuilder encoded = new StringBuilder();
         
         for (char c : str.toCharArray()) {

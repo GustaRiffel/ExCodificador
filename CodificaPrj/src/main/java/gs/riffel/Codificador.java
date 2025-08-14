@@ -13,8 +13,8 @@ public interface Codificador {
     public int getNivelSeguranca();
 
     // Recebe um string e retorna o correspondente codificado
-    public String codifica(String str);
+    public String codificar(String str);
 
     // Recebe um string codificado e retorna o correspondente decodificado
-    public String decodifica(String str);
+    public String decodificar(String str);
 }
