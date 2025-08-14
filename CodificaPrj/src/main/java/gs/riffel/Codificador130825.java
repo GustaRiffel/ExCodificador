@@ -15,15 +15,35 @@ public class Codificador130825 implements Codificador{
         return 1;
     }
 
-    public String codifica(String str){
-         StringBuilder SB = new StringBuilder();
+    /*Método responsável por realizar a cifra de Atbash*/
+    private String Atbash(String str) {
+        if (str == null) {
+            return null;
+        }
+        
+        StringBuilder SB = new StringBuilder();
 
-         return SB.toString();
+        for (char caracter : str.toCharArray()) {
+            if (Character.isLetter(caracter)) {
+                if (Character.isUpperCase(caracter)) {
+                    char caracterInvertido = (char) ('A' + ('Z' - caracter));
+                    SB.append(caracterInvertido);
+                } else {
+                    char caracterInvertido = (char) ('a' + ('z' - caracter));
+                    SB.append(caracterInvertido);
+                }
+            } else {
+                SB.append(caracter);
+            }
+        }
+        return SB.toString();
+    }
+
+    public String codifica(String str){
+       return Atbash(str);
     }
 
     public String decodifica(String str){
-        StringBuilder SB = new StringBuilder();
-
-        return SB.toString();
+        return Atbash(str);
     }
 }
