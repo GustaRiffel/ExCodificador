@@ -17,7 +17,7 @@ public class CodificadorMorse implements Codificador {
     }
 
     public int getNivelSeguranca(){
-        return 2;
+        return 40;
     }
 
 
