@@ -13,7 +13,7 @@ public class CodificadorAtbash implements Codificador{
     }
 
     public int getNivelSeguranca(){
-        return 1;
+        return 50;
     }
 
     /*Método responsável por realizar a cifra de Atbash*/

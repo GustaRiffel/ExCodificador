@@ -11,6 +11,8 @@ public class FactoryCod {
     static {
         codificadores.add(new CodificadorSimples());
         codificadores.add(new CodificadorMorse());
+        codificadores.add(new CodificadorAtbash());
+        codificadores.add(new CodificadorPedro());
         // Se criar novos codificadores, basta registrar aqui
     }
 
