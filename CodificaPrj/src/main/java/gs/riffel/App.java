@@ -14,9 +14,5 @@ public class App {
         String texto = "Factory testando!";
         String codificado = cod.codificar(texto);
         String decodificado = cod.decodificar(codificado);
-
-        System.out.println("Texto original: " + texto);
-        System.out.println("Texto codificado: " + codificado);
-        System.out.println("Texto decodificado: " + decodificado);
     }
 }
